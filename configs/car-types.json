@@ -1,0 +1,17 @@
+[
+  {
+    "type": "Car",
+    "tankCapacity": 10,
+    "fuelTypes": ["Diesel", "LPG" , "Unleaded"]
+  },
+  {
+    "type": "Van",
+    "tankCapacity": 80,
+    "fuelTypes": ["Diesel", "LPG"]
+  },
+  {
+    "type": "HGV",
+    "tankCapacity": 150,
+    "fuelTypes": ["Diesel"]
+  }
+]

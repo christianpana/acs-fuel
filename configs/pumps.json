@@ -1,0 +1,9 @@
+[
+  {
+    "lane": 1,
+    "no": 1,
+    "name": "Pump 1",
+    "fuelTypes": ["Diesel", "LPG" , "Unleaded"],
+    "dispenseCapacity": 1.5
+  }
+]
