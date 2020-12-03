@@ -14,6 +14,7 @@ class Forecourt {
             return false;
         }
 
+        car.startWaiting();
         this.queue.push(car);
 
         console.log(`Added car "${car.type}" to forecourt`);
@@ -22,7 +23,9 @@ class Forecourt {
     }
 
     getCar() {
-        return this.queue.shift();
+        const car = this.queue.shift();
+        car.stopWaiting();
+        return car;
     }
 
     isFull() {

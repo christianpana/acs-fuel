@@ -36,7 +36,10 @@ class Pump {
                 clearInterval(this.timer);
                 car.stopFueling();
 
+
                 console.log(`Finished fueling ${car.type}`);
+                console.log(`${(new Date()).toJSON()} - ${car.fuelType} - added fuel: ${car.getAddedFuel()}`);
+                // 4.	A detailed list of each fuelling transaction (DateTime, fuel type, number of litres dispensed).
                 console.log('---------------------------');
 
                 this.totalServicedCars++;

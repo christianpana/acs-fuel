@@ -5,6 +5,7 @@ class Car {
         this.fuelType = car.fuelType;
         this.tankCapacity = car.tankCapacity;
         this.availableFuel = car.fuel;
+        this.addedFuel = 0;
 
         this.waiting = false;
         this.waitingTimer = null;
@@ -48,11 +49,14 @@ class Car {
             console.log(`${this.type} is ${percentageFull}% full`);
         }
 
+        this.addedFuel += addedFuel;
         return addedFuel;
     }
 
     startWaiting() {
         this.waiting = true;
+
+        console.log(this.type + ' started waiting');
 
         this.waitingTimer = setInterval(() => {
             this.waitingTime += 1;
@@ -66,6 +70,10 @@ class Car {
 
     isWaiting() {
         return this.waiting;
+    }
+
+    getAddedFuel() {
+        return this.addedFuel;
     }
 }
 
